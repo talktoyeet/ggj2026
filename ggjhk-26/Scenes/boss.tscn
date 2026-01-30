@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cdvhslky2qwoq"]
 
 [ext_resource type="Texture2D" uid="uid://ouiwanmmyl5y" path="res://Assets/Character/Golem/No_Swoosh_VFX/Golem_1_attack.png" id="1_0154r"]
-[ext_resource type="Script" uid="uid://ct02hmoqrrjpe" path="res://Scenes/boss.gd" id="1_wwfse"]
+[ext_resource type="Script" uid="uid://ct02hmoqrrjpe" path="res://Scripts/boss.gd" id="1_wwfse"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wwfse"]
 atlas = ExtResource("1_0154r")
