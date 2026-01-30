@@ -15,5 +15,13 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="ggjhk26"
+run/main_scene="uid://b607ymtk603hx"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/mode=3
+window/size/initial_position_type=0
+window/size/borderless=true
+window/stretch/mode="canvas_items"
