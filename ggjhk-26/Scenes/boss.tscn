@@ -1,0 +1,98 @@
+[gd_scene format=3 uid="uid://cdvhslky2qwoq"]
+
+[ext_resource type="Texture2D" uid="uid://ouiwanmmyl5y" path="res://Assets/Character/Golem/No_Swoosh_VFX/Golem_1_attack.png" id="1_0154r"]
+[ext_resource type="Script" uid="uid://ct02hmoqrrjpe" path="res://Scenes/boss.gd" id="1_wwfse"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wwfse"]
+atlas = ExtResource("1_0154r")
+region = Rect2(0, 0, 90, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cxrok"]
+atlas = ExtResource("1_0154r")
+region = Rect2(90, 0, 90, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ukjjc"]
+atlas = ExtResource("1_0154r")
+region = Rect2(180, 0, 90, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n725y"]
+atlas = ExtResource("1_0154r")
+region = Rect2(270, 0, 90, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mh6p8"]
+atlas = ExtResource("1_0154r")
+region = Rect2(360, 0, 90, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qtle2"]
+atlas = ExtResource("1_0154r")
+region = Rect2(450, 0, 90, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yq25j"]
+atlas = ExtResource("1_0154r")
+region = Rect2(540, 0, 90, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_odcco"]
+atlas = ExtResource("1_0154r")
+region = Rect2(630, 0, 90, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q76ad"]
+atlas = ExtResource("1_0154r")
+region = Rect2(720, 0, 90, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nuv35"]
+atlas = ExtResource("1_0154r")
+region = Rect2(810, 0, 90, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lel8w"]
+atlas = ExtResource("1_0154r")
+region = Rect2(900, 0, 90, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6xjeg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wwfse")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cxrok")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ukjjc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n725y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mh6p8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qtle2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yq25j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_odcco")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q76ad")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nuv35")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lel8w")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="Boss" type="Node2D" unique_id=354610350]
+script = ExtResource("1_wwfse")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1249800325]
+position = Vector2(1, 0)
+sprite_frames = SubResource("SpriteFrames_6xjeg")
+frame = 6
+frame_progress = 0.78206825
