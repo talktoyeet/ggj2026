@@ -3,3 +3,7 @@
 [node name="Chino" type="Node2D" unique_id=132080231]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=753617072]
+
+[node name="Player1" type="CharacterBody2D" parent="." unique_id=1883597524]
+
+[node name="Player2" type="CharacterBody2D" parent="." unique_id=963178507]
