@@ -6041,4 +6041,3 @@ position = Vector2(-271, 182)
 
 [node name="Boss" parent="." unique_id=354610350 instance=ExtResource("10_kpjo8")]
 z_index = 1
-position = Vector2(-57, 158)

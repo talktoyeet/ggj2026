@@ -4,20 +4,22 @@
 [ext_resource type="Texture2D" uid="uid://dde77g8igdmbl" path="res://Assets/Danmaku/FoxShotSheet.png" id="1_vlxeq"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_14k46"]
-radius = 2.0
-height = 10.0
+radius = 2.001509
+height = 9.996966
 
 [node name="Bullet" type="Area2D" unique_id=1571679604]
 z_index = 1
 script = ExtResource("1_qvus8")
 
 [node name="redBullet" type="Sprite2D" parent="." unique_id=1229697281]
+rotation = 1.5775414
 texture = ExtResource("1_vlxeq")
 region_enabled = true
 region_rect = Rect2(1, 51, 5, 12)
 
 [node name="redBulletHitbox" type="CollisionShape2D" parent="." unique_id=403461355]
 z_index = 1
+rotation = 1.554772
 shape = SubResource("CapsuleShape2D_14k46")
 
 [node name="Timer" type="Timer" parent="." unique_id=883190871]
