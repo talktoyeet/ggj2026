@@ -33,6 +33,7 @@ func _process(delta: float) -> void:
 
 
 func _on_ShootTimer_timeout() -> void:
+	print("shooting")
 	for s in rotator.get_children():
 		var bullet := BULLET_SCENE.instantiate()
 		# better to add to a game/arena node instead of root, but this works:

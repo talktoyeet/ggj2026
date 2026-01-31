@@ -7,7 +7,7 @@
 radius = 2.0
 height = 10.0
 
-[node name="Bullet" type="Node2D" unique_id=535776190]
+[node name="Bullet" type="Area2D" unique_id=1571679604]
 z_index = 1
 script = ExtResource("1_qvus8")
 
@@ -19,3 +19,8 @@ region_rect = Rect2(1, 51, 5, 12)
 [node name="redBulletHitbox" type="CollisionShape2D" parent="." unique_id=403461355]
 z_index = 1
 shape = SubResource("CapsuleShape2D_14k46")
+
+[node name="Timer" type="Timer" parent="." unique_id=883190871]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
