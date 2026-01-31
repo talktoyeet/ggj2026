@@ -94,5 +94,12 @@ script = ExtResource("1_wwfse")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1249800325]
 position = Vector2(1, 0)
 sprite_frames = SubResource("SpriteFrames_6xjeg")
+autoplay = "default"
 frame = 6
 frame_progress = 0.78206825
+
+[node name="ShootTimer" type="Timer" parent="." unique_id=57762920]
+
+[node name="Rotator" type="Node2D" parent="." unique_id=1939146532]
+
+[connection signal="timeout" from="ShootTimer" to="." method="_on_shoot_timer_timeout"]

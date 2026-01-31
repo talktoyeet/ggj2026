@@ -121,6 +121,7 @@ animations = [{
 script = ExtResource("1_cvnsp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1340659984]
+z_index = 1
 shape = SubResource("CircleShape2D_cvnsp")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=918500429]
@@ -128,4 +129,5 @@ texture_filter = 1
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_qqcod")
 animation = &"idle"
+autoplay = "idle"
 frame_progress = 0.44727913

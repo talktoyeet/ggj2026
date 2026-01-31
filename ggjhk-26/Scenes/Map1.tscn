@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://c2g34b5n8ci6q" path="res://Assets/MapArt/Backgrounds/WOODS - Third.png" id="7_odaa7"]
 [ext_resource type="Texture2D" uid="uid://b8n3xke3wokab" path="res://Assets/MapArt/Tiles/Tilesheet - WOODS.png" id="8_6cv4g"]
 [ext_resource type="PackedScene" uid="uid://b6ooddu2q3jt1" path="res://Scenes/player.tscn" id="9_3pi16"]
+[ext_resource type="PackedScene" uid="uid://cdvhslky2qwoq" path="res://Scenes/boss.tscn" id="10_kpjo8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0i0fk"]
 texture = ExtResource("1_j2fs2")
@@ -6037,3 +6038,7 @@ tile_set = SubResource("TileSet_bi7il")
 [node name="Player" parent="." unique_id=1206281867 instance=ExtResource("9_3pi16")]
 z_index = 1
 position = Vector2(-271, 182)
+
+[node name="Boss" parent="." unique_id=354610350 instance=ExtResource("10_kpjo8")]
+z_index = 1
+position = Vector2(-57, 158)

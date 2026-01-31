@@ -1,12 +1,15 @@
 [gd_scene format=3 uid="uid://tnpit6ba5eoe"]
 
+[ext_resource type="Script" uid="uid://cp4442ubjpm2j" path="res://Scripts/bullet.gd" id="1_qvus8"]
 [ext_resource type="Texture2D" uid="uid://dde77g8igdmbl" path="res://Assets/Danmaku/FoxShotSheet.png" id="1_vlxeq"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_14k46"]
 radius = 2.0
 height = 10.0
 
-[node name="Area2D" type="Area2D" unique_id=921466925]
+[node name="Bullet" type="Node2D" unique_id=535776190]
+z_index = 1
+script = ExtResource("1_qvus8")
 
 [node name="redBullet" type="Sprite2D" parent="." unique_id=1229697281]
 texture = ExtResource("1_vlxeq")
@@ -14,4 +17,5 @@ region_enabled = true
 region_rect = Rect2(1, 51, 5, 12)
 
 [node name="redBulletHitbox" type="CollisionShape2D" parent="." unique_id=403461355]
+z_index = 1
 shape = SubResource("CapsuleShape2D_14k46")
