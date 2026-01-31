@@ -24,5 +24,10 @@ shape = SubResource("CapsuleShape2D_14k46")
 
 [node name="Timer" type="Timer" parent="." unique_id=883190871]
 
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=912051802]
+texture = ExtResource("1_vlxeq")
+region_enabled = true
+region_rect = Rect2(4, 4, 8, 8)
+
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
